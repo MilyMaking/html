@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1">
+    </head>
+</html>
+<style>
+    .dropbtn{
+        background-color: black;
+        color: white;
+        padding:16px;
+        font-size: 16px;
+        border: none;
+    }
+    .dropbtn a:hover{
+        background-color: antiquewhite;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index:1;
+    }
+    .dropdown-content a{
+        color: black;
+        padding:12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: arial;
+    }
+    .dropdown-content a:hover{background-color: white;}
+    .dropdown:hover .dropdown-content{display: block;}
+    .dropdown:hover .dropbtn{background-color: #6eaeee; padding: 16pt;}
+    .genbtn{
+        text-decoration: none;
+        font-family: arial;
+        padding: 16px;
+        background-color: black;
+        color: white;
+    }
+    .genbtn:hover{background-color: #6eaeee; padding: 16pt;}
+    .navi{
+        background-color: black;
+        padding-bottom: 10pt;
+        position: fixed;
+        padding:10pt;
+    }
+    .head{
+        color: white;
+        font-family: arial;
+    }
+</style>
+<div class="navi">
+    <div class="head"><head>Mily Making</head></div>
+    <a class="genbtn" href="index.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Others</button>
+        <div class="dropdown-content">
+            <a href="#">Contact</a>
+            <a href="#">Survey</a>
+            <a href="#">Service</a>
+            <a href="#">Offers</a>
+        </div>
+    </div>
+</div>
+</html>
